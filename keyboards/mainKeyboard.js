@@ -12,6 +12,12 @@ const mainKeyboard = Keyboard.builder()
     payload: { command: 'help' },
     color: Keyboard.SECONDARY_COLOR,
   })
+  .textButton({
+    label: '❔ Частые вопросы',
+    payload: { command: 'faq' },
+    color: Keyboard.SECONDARY_COLOR,
+  })
+  .row()
   .urlButton({
     label: '🌐 Наш сайт',
     url: 'https://www.pochta.ru',
